@@ -12,8 +12,8 @@ import base.DriverSetup;
 
 public class SC_login_T001 extends DriverSetup
 {
-	String baseURL="https://chatgptgw-admin.web.app/admin/login";
-//	String tenant_id="f71915eb";
+	String baseURL="https://chatgptgw-admin.web.app/login"; // need to add context path
+//	String tenant_id=""; 
 	String userinfo = "cutie876@domaain24.online";
 	String pass = "Password1";
 	@Test
@@ -41,25 +41,6 @@ public class SC_login_T001 extends DriverSetup
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/div[1]/div/div[3]/div/ul/li[3]/a/div[2]/p")).click();
 		Thread.sleep(5000);
-		
-		
-		
-		/*String expectedtitle = "Incorrect password. Please try again or you can reset your password.";
-		String actualtitle = "Incorrect password. Please try again or you can reset your password.";
-		//String actualtitle = driver.getTitle(); to get the page title
-		
-		if (expectedtitle.equals(actualtitle))
-		{
-			System.out.println("Login Failed");
-			//driver.findElement(By.linkText("create a new account")).click();
-			//driver.findElement(By.partialLinkText("create")).click();
-			Thread.sleep(2000);
-		}
-		else
-		{
-			System.out.println("Login Success");
-		}
-		*/
 	}
 	
 	
